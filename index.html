@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores & Delicias | Recetas de Cocina Profesionales</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-utensils me-2"></i>Sabores & Delicias
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-4">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home"><span>Inicio</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#featured-recipes"><span>Recetas</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories"><span>Categorías</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#chef"><span>Sobre Nosotros</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"><span>Contacto</span></a>
+                    </li>
+                </ul>
+                <div class="search-container d-flex">
+                    <input class="form-control" type="search" placeholder="Buscar recetas...">
+                    <button class="btn" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container hero-content">
+            <div class="text-center">
+                <h1 class="hero-title">Descubre el Arte Culinario</h1>
+                <p class="hero-subtitle">Más de 1,000 recetas profesionales creadas por chefs expertos para todos los niveles y ocasiones especiales</p>
+                <div class="mt-4">
+                    <a href="#featured-recipes" class="btn hero-btn hero-btn-primary">
+                        <i class="fas fa-book-open me-2"></i>Explorar Recetas
+                    </a>
+                    <a href="#newsletter" class="btn hero-btn hero-btn-outline">
+                        <i class="fas fa-utensils me-2"></i>Aprender Técnicas
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorías -->
+    <section class="category-section py-5" id="categories">
+        <div class="container animate-on-scroll">
+            <h2 class="text-center mb-5" style="font-size: 2.5rem; color: var(--text-dark);">Explora por Categorías</h2>
+            <div class="text-center">
+                <a href="#featured-recipes" class="btn category-btn active-category">
+                    <span>Todas</span>
+                </a>
+                <a href="#featured-recipes" class="btn category-btn">
+                    <span>Entradas</span>
+                </a>
+                <a href="#featured-recipes" class="btn category-btn">
+                    <span>Platos Principales</span>
+                </a>
+                <a href="#featured-recipes" class="btn category-btn">
+                    <span>Postres</span>
+                </a>
+                <a href="#featured-recipes" class="btn category-btn">
+                    <span>Vegetariano</span>
+                </a>
+                <a href="#featured-recipes" class="btn category-btn">
+                    <span>Rápido y Fácil</span>
+                </a>
+                <a href="#featured-recipes" class="btn category-btn">
+                    <span>Internacional</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+ <!-- Recetas Destacadas -->
+
+
+
+
+
+    <!-- Recetas Destacadas -->
+    <section class="container mb-5 py-5" id="featured-recipes">
+        <div class="animate-on-scroll">
+            <h2 class="text-center mb-5" style="font-size: 2.5rem; color: var(--text-dark);">Recetas Destacadas</h2>
+            <div class="row">
+                <!-- Receta 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card recipe-card">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" class="card-img-top" alt="Ensalada saludable">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge badge-difficulty badge-easy">Fácil</span>
+                                <span class="badge bg-dark">15 min</span>
+                            </div>
+                            <h5 class="recipe-title">Ensalada César Gourmet</h5>
+                            <p class="recipe-description">Una versión elevada del clásico César con crutones artesanales, parmesano añejado y aderezo cremoso hecho en casa.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="ms-2 text-muted">(128)</span>
+                                </div>
+                                <a href="ensalada.html" class="btn recipe-btn">Ver Receta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+             <div class="col-lg-4 col-md-6">
+
+    <div class="card recipe-card">
+        <!-- receta 2 -->
+        <img src="https://spcdn.shortpixel.ai/spio/ret_img,q_cdnize,to_auto,s_webp:avif/paulasapron.com/wp-content/uploads/2022/11/Crema-de-Calabaza-Asada-con-Picatostes-de-Gruyere-2-683x1024.jpg" class="card-img-top" alt="Crema de calabaza">
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge badge-difficulty badge-medium">Media</span>
+                <span class="badge bg-dark">30 min</span>
+            </div>
+            <h5 class="recipe-title">Crema de calabaza</h5>
+            <p class="recipe-description">Deliciosa crema de calabaza con un toque de crema y perejil fresco, perfecta para días fríos.</p>
+            <div class="d-flex justify-content-between align-items-center mt-4">
+                <div class="rating-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="ms-2 text-muted">(256)</span>
+                </div>
+                <a href="calabaza.html" class="btn recipe-btn">Ver Receta</a>
+            </div>
+        </div>
+    </div>
+</div>
+                
+                <!-- Receta 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card recipe-card">
+                        <img src="https://canalcocina.es/medias/images/0001056186DulcesInfaliblesS01E001TartaManzanaHCLEAN02.jpg" class="card-img-top" alt="Tarta de chocolate">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge badge-difficulty badge-hard">Difícil</span>
+                                <span class="badge bg-dark">2 hrs</span>
+                            </div>
+                            <h5 class="recipe-title">Tarta de manzana </h5>
+                            <p class="recipe-description">La legendaria tarta austriaca con bizcocho de chocolate, mermelada de albaricoque y glaseado de chocolate negro brillante.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="ms-2 text-muted">(94)</span>
+                                </div>
+                                <a href="tarta.html" class="btn recipe-btn">Ver Receta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    
+
+
+
+
+   
+              
+        
+    </section> <!-- Postres Parisinos -->
+    <section class="container mb-5 py-5" id="paris-desserts">
+        <div class="animate-on-scroll">
+            <h2 class="text-center mb-5" style="font-size: 2.5rem; color: var(--text-dark);">Postres Parisinos</h2>
+            <div class="row">
+                <!-- Postre 1 - Macarons -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card recipe-card">
+                        <img src="https://images.unsplash.com/photo-1558326567-98ae2405596b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1486&q=80" class="card-img-top" alt="Macarons franceses">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge badge-difficulty badge-hard">Difícil</span>
+                                <span class="badge bg-dark">2 hrs</span>
+                            </div>
+                            <h5 class="recipe-title">Macarons Parisinos</h5>
+                            <p class="recipe-description">Los icónicos macarons franceses con sus delicadas tapas crujientes y suaves rellenos de ganache.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="ms-2 text-muted">(342)</span>
+                                </div>
+                                <a href="macarons.html" class="btn recipe-btn">Ver Receta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Postre 2 - Éclair -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card recipe-card">
+                        <img src="https://www.hervecuisine.com/wp-content/uploads/eclairs4.jpg" class="card-img-top" alt="Éclair de chocolate">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge badge-difficulty badge-medium">Media</span>
+                                <span class="badge bg-dark">1.5 hrs</span>
+                            </div>
+                            <h5 class="recipe-title">Éclair au Chocolat</h5>
+                            <p class="recipe-description">Clásico éclair relleno de crema pastelera y cubierto con ganache de chocolate negro.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="ms-2 text-muted">(278)</span>
+                                </div>
+                                <a href="eclair.html" class="btn recipe-btn">Ver Receta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Postre 3 - Mille-feuille -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card recipe-card">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMWFhUXGBgaFxgYGRcYHRgdGBgYFxcaFxsdHSggGholHRcVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0lICYtLS0tLS0tLS0tLS0tLS0tLS8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALgBEQMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAAMFBgcBAgj/xABJEAABAwIEAwUDCQUGBQMFAAABAgMRACEEBRIxQVFhBhMicYEykaEHFCNCUrHB0fAWYnKCkhUzQ1TS4VNjstPxlKLCJDRVc5P/xAAZAQACAwEAAAAAAAAAAAAAAAACAwABBAX/xAAsEQACAgEDBAEDBAIDAAAAAAAAAQIRAxIhMQQTQVEiFGGRMoHR8KGxBXHx/9oADAMBAAIRAxEAPwCx9k85S9qWBEqVYiDY8qsGIy1p2TAv6VhmVdoltL1JUSDvO9X7Adumo8SoNcCWOlTWx0L32Yxn+UoZc8SVJP1VI6+V6bHfthPdOEFJmYEEclgffS7Rdpu8CVNtqXoUkkkED31bsF3DyApMAkW/XGs6xvwx2qluQ4zTUT3rMWFwdQ68JHuoXFZQ2+QUKAM24RHIiu580tozv6x8a9N4BZSFIJQYvex/mFJlF8+RsZ0cZyh+yQ87H8R++ptjs+G/GrxKF9SyV7b3OwprI8ctJ0OCR1vEdRUonCuYgyolDQPvHSpig5c7sueSvsB4nMFBWllQKlfZ9keXM1MZXl6W4Ws63PtHh0TyqAz1LWGdSptKoUjxEXiDHPjNR+J7TFJ0jWTsElKp+6nxkozp8iZJyWxZu2WIWWPodPeahGowIm/wmoFWYIwrWt9wd4BMA/cJ2qp9pu2fcCFHU6dwL6Og5q58KzrMc0dxS5VITvEzPVX5bVph00889ctl/sB5I44aVybN2I7ZJxGJCUnjMniNiB76pXyh5OlrOH1AQiA70laf9U1HdhsSljFsrUFFKVDVpvHU9KJ+UHtEnF4pxbfsEgA8SEiB+Pvrq48agtKMU5anbJr5PsYS0tJ+qu38wmrM68dpqqfJuzLLyo+uPgL/AH1aYmrlBAa2mNO869sY8bKTJ9xr2pmkzlonVpvzO9LeKLGR6ia4ZIYdhChOqD1ryvAKHL30m8PpTJvTqdgfhSuy1wx31XsEVlRJ4xTjWXFPERRCSeJp9sWo1jYL6hMabQkbmegpOKUrcR0p4tgCeNcUk2imRhTsTPK5KhpSSBtTS2OW3Oje6PE0oA2p6YlgSWgkyDepDBYm+lRoV0Df7q4lQNQonSqoLGYrvFQmNIJ32MGCpXMA2A4kctpIOnulH6wSog+QMVVUoLZ7oqC9IA1JMg6QRM8Rx9aW2GlZOYYIExcndRuVeZ/Dhwo1FB5awYE0eqE3UQKhGNqnnXlL4FjQ+JzdpO0qNDf2pOyarXH2TSyT71POuVGfPunxFKprj7Jpl6PmxOIWNlGi8Nmy0mfiKAIrkUxwjLlFqTRdsP23cUNLiwobXSKlcozuLJeKEk7ABYH8puPSs0iupJFwSPKssuhxv9Ow9dRLybHj23XW5bxActtEfA1aOzfaFopCFkA9eB5GsKy3P3W1CVqjmN/96mG+0CFE3E8yNJrFLpMmN7bj1mhNejee5ZKtVqkU5giIPs/dWR9nM5ZUQlbjiDwOoFP3VYc/zdrCDU453hIlKJhJ/eWRw6cazrXGelRDcU1bZZM7WxoLusFu0bGTOyRxJNZT2u7bKQqMO2lKlAguE6iItA5Ee6aqfaHPnsY6VFStP1UiwHkBsKBRgTxsOtdDD0UVLXNb+hE87rTEZGpxRUSVKO6jUzhGQlP6vQqHEoFrmvDjqlbmt9GZsOVj4QUJiT7ShuenlQiRXlKedX/sT2IfUtL72Hc0CChJABUeBIURA86myKLb2IyUtYdLah4lJKleahMelqkXMuIgkeVSuEwakKC1pWI4ED4EKp3v1F0NpRBI1HWQISCATaZ3Fp84pbnFFxxSZENMiY/Cn3UWipXEYEA7FPUXHw2odWCJuL+VUpxbpMFwlFEeWeZr3AAtRSmgN6bU1RgggQTeng31NeYrmqN6slnQjqTT5RamW6dQ5fnUIeUu3jlTqkiJptQEzXW2Vq3sKhBpT3CvbTRNymjWMGlNzenwRtU1F0DEAQI/XKqkMMUKMqCW0yVKUYCECSFEncDb3VcykCobMUAAiAQSZkT7xxBFjS570w4FTxnygLdPdZegBAscQ6DBjcoRufMxQGIzV+QHMRc9ACfTejsT2YB/+2UGlGIQYhPPujYOJibWUOVQ+aZAcKoHWFKkSTOone/5cKVnzxxrjdmvp+n7nBbsuwh0AqMnyiuZkFoQVIIkcCJorJXg40kjgL13Omz3KgLqIsBWLW5KzYunp1RRv2txH2G/6T+dKm/2YxP2Fe6lQamH9OZxpHKuhpPWkDXQa7ZxDx3I50jhv3hTlKrINjDfvCvScInir4f716rtQg5h20oMhS/SB76IexIUZVKz++omPIbCgxXqaqlySx5WKOwsOlqaKia86qMwWWPvGG2lKniBA95tUIMJTzqz9l+x7+L8SQG2R7Tq/Z2kaRIK5kbW61a+w3YB1p1Lj60hyPo2hpUSeaipJgATMAHqBM674MOiXHG5G5WUiPKdvKs8srbah+Rsce1v8GP5D2VYwroXicYwHUL8EfSJSIsrSQJXJBE2TE3MRoysa25BaxT5EXKR4fNS1p0AeV+lesNnXfLlpsaFK0ocIALpAJUUzsgAe0d+FC9sA433LyUqWhtepwC9xGkrTxQL+Rg8LK1Sd72ao44ppPYNzFJaCHylx1IP0sklQTFiAfqg3IETxotbOGx7YWhZOk+FaCUrQY96T509kudNvs96kwB7Un2SLmTUJlrOnFPPsNq0rCUpSkAAxcrOqEpuTA3gkxei2j+4v5O72aC8C+/h3yy+6HWtGtLhGlafFpCVxZRN44+E78C384RwYxKhzSy5HxAphLGOCipDWFSZ3W46tR4cEAD3nzpOY3Ho/vPmYnbSXlE+SYH3io6r5FNW9jrudMhJUpjEgDfUysfEiKhlZqcRiThmUIaKQFKL06iDeEISRJiD7XEUSxjNWO7nFqhQShTSSNKFqIuUiT7JsAZMzcwIlO1HZ5jEI1rPduNglDyTpUiJIMjh+hFWnJ8EcYRdNc/39zq8nEc/K1CKy9I513Kc8KcO13yXXHdA1920td4+sQNIVtIn0pPdrMOn+9ZxLfVbDke8A01T2Eywu+DiMGnlXU4VCRtSa7SYBwSl8e5YPuKaYwmYh90oYbUptB+kdUdASYkBKYlR23iBU7iB7MvQQFDanguK6UAEixpEgUVp8AcCN68LAG9NqWOZFCYh6BvNUUPPvDnQb65HmT99NsMLWb+zVQxmdqaximyfAFGenD3GBQzG4lbLJiGAkGRqB3B2vYW+FQ7uFZXHeAkcNZVboF+1HRWqKk2cwQsAwFQQRMSkg/r9GnFBJ6jlE9Pvj0rNOGrY6GKSjv5IlCFt2a0NI+1pUse9HDqspp3DJfdVbGgp5shH4lVFlCd0kJtNuEm8Dfyj48BcVliVOStIWoGErCFauJgLG+x2PA0WPHFeA555+w3+z3f87iPe3/opUJ8yb/zD3/qH/wDXSp2mPoV3p+zOX+xKfqvEfxJoF3sW8DAWg+citS+bg+fpXBgxMkUxNnLsyhXY/FbAIP8AN/tXf2Oxn/DH9QrXcNgRM0cnCDlVtlpsxVXY/GDdsD+YU+12IxR30AeZP4VtBwwIiK6xhUi331EyrZkbPyfun23QP4Uk/eanMv8Ak4Z+utajyskfC9aN82G0V7bYA41LJbK3l/Y7CtQUsp1cyNR95q2YDL0ITq25QPjXcOynUCowPv8AhRuJKTGlYEXI2noBWLq8+mLiuTRgxW9TPWCwbGsvFP0ik6SsEgxyEGwpfsxhXFalIKzyWtax/SVEfCoJTbiJDC1KRFwfqnoIsBUl2fxiyohagYuDaf5gPT31nwdbCcljar/RqyYJxTmpEhmjKWlNu6fCgKBAEwlQEx5aRbkD0o5nFtrb7wEKQRvvPCI3nhG/Co7Ms87wKYYQpbhEFUQhvhq1KgKIIMATtTDeSvhpLbT6WgnkkukkyVHUopuSSSY410NSb+Jn0ulq2/gEyvs+6hCko0tBa1LMjWRJsAmQkQIAuoW2olfZx03VmGJH8PdIA9Ai1BudmcdMpzFQ/lV92uKPwXZafFiX3cSR9VZIb/8A5gwf5poYx+wcsnnV/j+SJGXgq0t43GYgm1nilFt/EgCY4hJtxIoRWNRgsehD4IbU3ZwyfGT7SiSSQB4ZvEyd5qdwGcMtvKZdPduKV4CqwKdkoTwTFxFp33JpztrhmncKtC0hSiD3fMLiyhyjieVA4rl+A4zd6a2Y/wBp8rw+JYPfRAEoWPaQYsUHedrcahctxuK+bNIVhHcQpKRqUVNtpJGxlStSiBFwIm815wmFxvdNIaYa0tpSkHELUJgRIbSDH8xnmOXtWa5u2YVgmXerbkf9Sp+FXzuyq0rSmn+4W12hxCBC8sfSBt3amnB6QoU6O1J44PFJJ21paR97k/CorHZ5jghSnQ1hglOpQA71wDznQCbRY7+Uv/J+yl1ovrUVuqUZKlFZSPqiTxib9SBAtU1Nuok7aUdUl+LGMsWvMlKK1JbZbXpLaCZURB8SoBI6wOgtNE43DJy7vMShUMwS4je45evxNBZ/lzmX6n8G0FFax4dWkJC1DUSOIk2H5UFmDynUqZxAKGnSUkqQoe1OytvXekZc8cLSlyxii8n6X8fX98kvgM1Q+0h9ufpEJWlJGwUPrHa15g8KaxWYaDBBvtY3qGOZIbbQyxCGGwEiCZXpEAC8xzO5qXyJ5TjRVpgT4SY8XMjp1pXR5X3HFcMDqsfw1DgaWq448aebwQHtGTRClnbamXE29o11DAe5AsKzj5QMKE4grA9tIJPPhWgIE73qvfKBl/eYcLSJLZv/AAnf3WoGxuPZmapzJbcwojy4enEfq9TuW9qZA7w6f+YmSg9FAXSelxxtVUeFRp1tq1JJHl+PMULi/B0cdPk2LI3QogJWFA7EGbQTwnl+fGrK12ZahSlODx3EhwgAzPGIM+1HO96zX5OQpYWsokuKDSQmRv4nXNM6RAAGqB7RFbC1ilBSU6RrcsAFJITpFwNtSUgSbDcWNHFXyZc8nGVJkV+wuH/5f/u/7lcq3d2jp/T/ALUqLtoz92RmwIB60QkeE3pvCCdxf0ozTRCRpLgHD3UVqMWppCRTknnV0WJF+NPi1NJjnTgFRlC105ArypNq5qgbUJY69iUBuDdR22G3P9cKrOMxom6TPCZHxFqdzftTh2VBsp754kBLSYJ1EwkKUbJuR16VO5kwjw+GLeIiSAfX1rhf8h0z19xvb0dPo8q06aKUvN1IIVpfTzIh1IHE9B5VL5dmirLSsKE2KARHMOIJvbjuOHGvOYYMD2VqAP2VkH1BkHyqO+YOzqbWhcXvAUOdxasapbrZm1tNFjw/ahdyWpHNPhMcyCan8BnaFjikxMKBH31mmIxTrf8AetL8wARfzpYPOgCkJcAAMwuYnpqEpN9wT5cK2Y+pyL7meeCElwac/njYmFSRvpvHnFO4HPUGBqE8jY/Gs7Tnq5KlsA8ltwpQja1ut6K/t4KkEqUg+2hSSgm8gKGi5HAhVF9bkTvwB9NCqJ7t9lDeKDaw2rvAoBS0CVaLkpiRMmI5b865i8Vjh9I1gkqMCA44lShHQKAHoT7yZFw2Yu6SrUAkezqIWCLzcGZEbU7lfbFtZhVjMTcesKAJ9JrRDqsc38tinjnGNLcDa+U7uVaMZhlNq/dCgf6VwCOoUalXu2pcw632WFpaQknvXYSDyDaROokwJkAddjNF5twAq0qG4kBQ9KrHbjEs4jDOYYOwTpnTE+FSVAdJgD1rTKaS3kKjFSkqgSPZEM4zCKDvjU5PfAm9z4YPBIERHHrQGXYNvAPud06otkAaTeCASEpgbn9c6rnyb9n8Sy4p0u6WYKUoUvWbwSVQkTttaKs+JeDWsFWqTqSTBJJkbDbjaKw9T1PxSx/k0Rx/KWr8HrNe0aCoBwqTBH1VDVMezAkkA/G9VzNXXXjpKoamQm3mNQ2na5Nt4vTWJGtZMkm+pavFpi+lI57+EWHU1I5XlneQV+FAIIBuoxxWTuayOUpyt7sPaKHuzeVtuLKnEE6B4ZuFDY+Q2PX0q0Or4bR+rVGZtmScI2p8pKkoABSgSYUpKZAHLf0NO5VnTGKR3jDgWOMbpPJQNwfOux0cUsZzuok5SCCmh8Q0eBo1aJ50wpJrSxBGjWncg+leziJBSoSCII5jjNOvNE8aAckGKz5Wx+Jbma9qsjLDhUkS2oyk8v3T1qvPJgVrfaN5CcOskJVMAA7Sfy39KzQoBebQUSla0JseagPxpcM9vSzpwxPTqXBJIxSWmCgPONuNqCUoQCkKlKS6VK4nWDbl51L/ACf508rFIQpWoKJAK5JEwVXJkEhOkCdyOFV3N8vdC3lSD3ij4YNjqkGIkGJvEH3GrT8nuAjvXlDR3LKjMX1qSRqkjh4vcKb3IuqYnTJY5NovX7SNcvifzpVnH7SsfYTSo+4/QjsMtWGRPlUm0kR0qGQ0RsqIothwnia0HOTCngYtArwxaxUTfzinFH3V7bTbaoQcC0mnEmKHav5+dPOCBY1Czrjg52FZ3217eBIUzh1RwU5x8kcvOl8o/aUt/QIMGPEQeewissZZcfcCUJKlE2A/XxqkGkXH5OMuRisSlxx6O5cS4W4usAylWonbWEgiOI5yN9ZMgzes+ybslhsIwSG9WI0FKnQXIvH1SogX6VYco7QNqGlatC0gTMQes7DyNcbL1EZ5Wk9kdCOFrGnRJZll6Fj2b9LVTcVk8OoTcArSJG91AVeRi0keE6/Ii/QRaq1mXaBhDzQVY94lJgatMmJURIFyN6y5IJtaeRkHKibcwGpMXtVezTLAAdbKVjfgk+8Cro2sxTGNQFC8fja/KinhTVoGOVpmas5QlZUWw63G4BBF5iL3rz81eCtBdSsbwTpV8PWtByvCtkLgD2iT7hXcxyNpwXTfnx99UscqsZ3ldMoeGcUgKusJKZkDUByNgQT1geZpYXM1TZxCuFgkT5p4ekUfj8qfbs2s6eAISrebXG1PPdnVaBKQpUCVRF+Jt1pTV8oYpI8YTMA2QO6ChN06ikmeUyFHyNTOB+akE90oEbJWJG/IQD6g1ALKUEoUhTf7x8Q90fdTrSkoUklbYBPhOpKZ4GAd6TuuBl2WvF5gENgrAiDpQIAtzHKqq86pcGLq9kJlJUOn2EcNW5i1TL6Qtcylw20gHUABxVf3A0Xl2XiStd1Hy/UU9RbEOSihnKso0p1ORqiwFkp6JHCnFFKQJi23+1H4hIAk7cpn0quOvKSJecCTEwkQVTtcyAnrTZVGkKVytklhcUNRuZkBIEyTvB5Tasf7ZdrHUZo44yVNFuG/ZKSrTJOpJ3BJ47gA1c8/xWIaw6X0AN6zCVKuGtXsKUIvPiudjEjasiz/AAWJS4pzESsrJJdnUFk/vfhbyrodDidub48COoklUUbl2L7dN4wBtcIfjb6q+qOv7tW1QmvlPB4tTagQSIMiNx1HWt87AdrBi2ghavpkATP1xzHXn7+db5KjKWlbdDOMSaMUqhlqgyKVKNhRlRUe3eHV3KdI+v8AgapGBXpdbUq2lxB9ygTWrZ3CmriYUPyqsYvKG3BItWHJHTI6eDP8eRYzIXfnPeTqbJIPiEAE2N+URzg1ZMWyhjDhsAfTrabUQeCnBMemoetROGzLwlDqQVpA0qtC+XH2v9qG7XZ+lCEJWZKVNuISmCZQqYN+U+sU2EY/qXIqeWbehrYputv/AIOH/oV/3K5VgjDcke9X5Uqyan7f4Oh3o+l/g1HFZO2sbQarmIypaDsVDmKuKKcCeddhSaOA4plL7s8iK9fOYMKMdfzq4OYZChBFRuIyFtRmaJSA0PwQgA3HvF6jO0WZ90ypUwqCE2mDBM+gHvirOcmTwXEeVZn8pSghxTQUVaG0qPm4pVvOGh/VUciKDMyzR9bzvEkq25k/qKvvZfJCwtlhCFO4p72gggFCLavEZCQBcqPlyqI7B5envHMQsAhpPhB+0ePoI99a12abGBy93HKA+cPxpURMBRhpP8Iuo84oghnNWu7d7hCgVIASQVKcKjGokr31RfYRUYpBRBU3KgZ1C8bbn37zTHZx1RfO64ClOK3PisVE8yVfGr63lbaxI99cHqek0ZPh53Ojh6i47lTwz2GVJUhIUdwEjfnEVzFpwy7aQAeMR09nePyqTznJgkGWwuLiLGPSofDZXrEoC2zJF7g7dawPHvRqjlvcOwWYuMgIQ5rQNu8BJAtYKEW8yaazHMsU6Ia7oTzCpI6Xj9GgEsOtKPH4H9e6vIxSgfEONiYBB53Aj0pmrJVKV/8AZSULto9dks0eZxCkYkqhwjQoxAUJGmwgAzx4jrV8x2bMsJ1PuJbHDUoAnyG5qkPZiyVaXEETxIBteYi5tyFNYPLmHlleoORaVJlUCwAUTwHMCnRzSS+UfwBPHCUruiz5VnuHxgcLJnu1JkEQb+yoDkYO/KrE0ARVBVkKmgpzCrU2oxaxC9JkAiPTbYnnVqyvNW3LBUK+sg7g8bcR1osWaMn/ACKy4tPHARj8qSsbVWHOyAKoMaZmI49KuKXKacfSLkQeu9FKEW7AjOS2BsDlyGEAAAD9TNRX9pO3hkkSYlQFpPptHvp3MsQp2EQe7BBUoykGOvIb+YqNxeKW5qZakCAFEiJg8r8OfK9KnK9o+BsY+ZeQZ3O1JUSoBTgnSgGQn95aoHL76eyfLXMRDjp1RsDsDM7H2vPhwipvKuy7aQFLEmLiBBPM8zQuJzRLSlN/YMCOAiR6waPS0vlwC5J7RCc9w6DhnEOEHUACTEC4gibWMVl+MwBYPcuJ1sLBseEmJTclNXdjOQpSnlqAbRtMELnkdjG3G5p44UY7DrCUgKBKkAQAOQPmLHz5xXQ6TNb0UZs2JpamYd2s7OnCrBSdTLgltfMcj1FN9ks1Uw+hQVpgyD1/EHiK07D5QMUw5g1i6klbJO6Vpkkev51jikFC4NikwfMG9dDnYzH01hng6hLidlCY5HiPMGR6V3TVf+TzF68MUn6ihHkpIP8A1BdWV0cRQUU9mC4zDam1JvcW8+FUp7EFPhBUOdXsJUbiqzmuRfSlQtquPPjQShYUZUdyjDBUE7b+Z514zpthxfdoaRP1lhKQfeBvTT+ttISm5O55eVF5ZgwkSNzczzpTxUqQyObe2eP7KY5H3D86VH9x+prlL+nfsb9V9i4mfLypao3rgVXpKq1mc9JeB417JmmVNg15AjaoQ48IrDe2jxXjsak8kR0CEpH/AMia2zELPKawnt5LOZuqIsrSqOaVNpCh7woVFuy/Bzsm5LK2xupQ+Nvy91an8pKw2yw2I0hRHA+whKU3/mVWS5KsNukTKSQoHmDxHwrWflCaDuEDqSCUFDlrkpcGk32IBCb9KYAC9le7Zw61LX4ngqQZFhICdjaQT605lfacJhKyBeJ4VmuadrgltDYStRHGQBBmwESTPXb4NYbNUupGl0JV9k6QqZgWO/pMjhXJzYs3ccnx4NuN49KXk3BGdoULkQeMwD5V3L3mlgaYgEj4/wDmsuy/NGxAdaWDxU24RzmEK8xaeBqVyfN22VqCFqKCZV3gjSbDVcxBkbcfjnt3ug9C8Gkv4BtYuL9N6rebZMtMlBChMwZ9RvRSM5mIWhIidSvgImuv9qcP7KlgdbRyv061c4wl9mVGUlwRjfZ2U6wiFRMA2EjlYE9aj3cE4kaAgki4ECRPwPvq45JmaFpBSoEbSOlqNxTDbghQBPxqu1atMLu77oz1vFPoESY62PqTM+hr2nNG1CHURfkOnWRtvUji+zobdSWvClShqESDqN7HjXcz7PmQpEjpw5W3A90XrNOF8j4zXhheX+Oe7cVAHE6o85/2og5Q4VDvHfoxBIHhBA4E7nykCq+jBrQ4FaoXsDYQORtB32Iq0NYgrQlJA1AxCbbDpsIPChxwV1uVkbW4Et8uLISmPsJ4AC2pfUcqey5lTayp4+LgOEHY9T190VL4DLw3wAO07W5DpUV2vWvU1oAO4VMm1oNt+NaZQ0w1PwJUtUtKDMXm4A6DlNUztG+w0svuoDjy4DaIk7ACeUACTTGbY4MgFxSXHCRobQYT/EqJVA6m/Ks+7T9ozJCFAvH23AZ0zulHAfhzm9Nx4p5mvQLksY72iz5xa+7BGu0hHstxwj6y9x0nga0L5Ms5+n7lapUtIUNViqBCrcTsffWf9gMkCkrxLmwJCZ4nir9danOyWDXiM4YLYBSwe8cKtgn2eXteK3kSNq6+PEoKkY5zcuS3PP8Ad43QAPBiJAHJZE/9RrKPlIy4N5liG0bFwkD+LxbdJNamCMRmSYuFPT/Kg7+Xgqkdq1IdzLE4lXsJUqOsWt14eahRvYHks3ycv6VYhvSTpSwDEWJCyePX4Vf2VAj/AGrNfkqds84r/FcA9QCbeq4q/wCJQdx7qlAN7hI3oXNGCtBjcXFe0kgcfhXJUeJHmKohUQ6udpE/rjR2GJ5R5n4RFPYvAuocJ8JSbiLHyp5tqACU3q2CgbuVcq7R/wA5/cFdoaZdonFPCuoeg3N6HfwoXE8L7mnO6E1QwKU5Tal03XQahLPDlYn8rI/+uH/6UD/3ufnW2LNZZ8reXkuNugboKf6VE/8AzqLkjexnuX4vTCVGwMpV9mdwf3T8N61vslniXsP3DidamwQUSZW0uygIN4uodKxhVH5Rmy2FpUmfCZHMeXTmNjTCh3tRlCm31IGxlTe0LSbgj8vSq64ngRBHCtqwjuDzVrQV6HhcI4pVF1NzcoMXRJ6c6yXtDla8NiHGXCCQZCkmQoG4IP6ioi2xrAZo80fAsjmD4knzSZBqXb7UT/eNDbdBi/kartcNDLFCXKLjOUeGXvKM1adISlSdR/w3BHuJsZjYKmphOJLdlyNxBkJM28QlIUPMn1rK6Lw2avI9l1YG0SSOexkVln0ab+LHR6hrk1zLe0HdkxpCTFkzpgCPLgONWfCdq0kCYHUxHQTWHYTPE/XSUqNipGxn7SeMetWjLMYCRocSogBUpINosdBuOM2tG1Zp9PKA1ZIyNEzPte2lOoRYg+0bwZta9WxjHpUkG0Eb/nWa4fNW3Ew42CU7EQkxOx6elFIzcggNKgTBSq+kcIvJE29OFZVOUXuhvbTWxdcxwSF8hPrNGYBtDSYSPhf41TEZu/qhWhPEEkgHnCtOn41ILxLxA8Ag/WCwR8Lnjw9aDuQUrrct45VVk/mWcIbSSqLXvv7qpuedokhJJhSlHwJsTESP4SePSKY7SupZAk966fZTdKUm11DkLbnlWUZ3nyl60JVq1WW59rmlAFgiteLFLNzwIlJY0e8+7Ra9SG/rWWsHcbaUfuxAnjUTk+WLfcCEjzPADia7l+WKcMnwp4k1ZHM3awzfdsAFXFUXJ8660YqKpGSUnJ2yczTHtYRgMoPsj39fOoj5P+0OJZfdDRlLyCHJ2SfqrH7wuOoUeVV/Dsu4pznzUdh51NfOE4cBtqCJBcUbTBBIBF5tECrso0JjGJweHXiSdK3AWsODvey3OcADesxzbH6zoQfADM/aP2j+HnXe0PaB3FulajCY0pQLJSgbJSOAkT1NOdlMpOIfSkjwJIK+UA2Hr901EiN0jSuxuALWEbBFyNZ81XHrED0q54ZetIPT48aibwAIqRywQgjkajFofcgCklYif17qQb1GONEowqeJM9LUFhpMBxaCpPxFB94lIKlqCQBJJsB5mj83xrWFbK3nABwH1ldEjjVIcSrEj5xi/oMIklSWzxjYuc1fu7DrsSK07h37Y4D/ADA9y/8ATSoL9osN/l8V/Q5+dKoXRoAI9KUcPxqPS4ubn0pxGM5j3TQ0EEqVXjX0ocY4biY5/lXWcUDIgiPj8ahQ7JP6FRHa3ABxjadJn0Nj+HuqYS4PKuPoCklJ2UI94qiMwHtDkam1EgWqvzWw4zAjUptYmCR+R9RVLz7sqRK279KYgFIqyHCCCDBFwRwr1iVhyVLErN9YNyf3hsrzsetMuJKTBEGkldWEMKZI602aMBrhg1CwOlFFFlP/AIrwcP194qEB4pU8cOrpXO5VyqyB2Azx5oaQUrT9lxOoDyO48gYqwYPtcyIK2lpPEJIWj0Crjnb41Ue5V9k0u5V9k+40meCE+UHHJKPDNVy3tIhf90vUkGCkm+0+yoXtO1TuX9oEAE2ASCYA90DgZiwrDfm6j9U11OGXtsOUj86yS/46Ddpjl1Uq3LJ2t7SnELUlBhBJ1KtKp3A6dZuOm8AytKbgSetIYQ8VJHrXoNIHEq+FbowUVSM8pNu2J3GLVa/lRGFwI9p1UJ5cT+ApkPcAAPv99eFLJ3M1dFEw9m4SnQ0nSn7/AD4moxx0qMkz+HkOFMTUvkeRu4lXhEI4rO3pzNWU2NZVly33A22JJ35AcSelbH2fyRvDMhCfa4q4qJ3Jobs5kKMOjSgXO5O586sCGCRA41BblZzSeEUfl0wbXmncPlsDxn0Fz76dxGLbZbWu4Qi6iApRHOYBM0Dl4GKB6WCBAqrdpe2qMN9E19K+baBcJ/ijj0HrFRfaDtinENKbwri23NtOk61g2soT3Yi8bxx4VXm8M1gUhbydbygNLQgKM7Fw30o49esUNUM8BqHFWxePc1kewnmZshpIiTw1Cw4faoh3HKf0v4oBths/RMJmBFgB9tzhOyZIF/Zhlk2xWMJKlWabSIJ5JbTulPNRv+PpNx86xRhAshA2i8IbHHqrzi0k1/f/AAhP/tcn/wDHo/qpVXf2xa/yqfePypVdP0Va9muLZOw2odTYH4fn1o0KmloFWCAoR6TTjbNiaLItXkq4fCoWCKTy+NehPGiCkV4LcXqEshM/wBWO8G6RChzA4+Y+6odtFjxq4xvVezjBd3LiASjiPs9f4aJC5LyVzMsgZeF0gHmLVUM07FOpktELHIbirlhs21FSVAJjbqPz/Oim8TqkTR0AmzHcRhnGzC0kHqKbC62jEYVCxC0hXmBUJi+xeGc2BQf3T+Bqg1IzPVXQqrlivk9X/hug9FAj7qi8V2KxaNkJV/CofcahepEDNLVRuJyPEt+0w4P5SfuoJTCxuhY/lV+VWXYgo1wqNc0Hkr3GloJ+qfcahLOajSBpxOGc4Nr/AKFflRDWUYhXssr9RH3xUJYGaVT2G7H4pW4QnzVf3Cal8L2CP+I6T0QAPiZqFakUo1IZbkr75GhBg/WNk+87+k1qOU9j8MiClsFXNXiPxqdTgQLAfrpVAuZRMs7AhIC3T3h5CyR/qq55XhEi0RGwAgDkAKl2MtJF7U/i32cOjU4tKBwKjc9ANyegqnNIig5bs9MYa350Wz3aPEpQF4kkC/IdaqWYdq06gkamwfZSE94+5/A1sj+JZP8ACaFazd8qhEYedwgh3EGbw48QUtjfwoFuBFLk35HRivAb23zF1X0bDsaQD3aJKlqm4UR7MCDpNlX4gA9ybt04Gyw+2rCvLEIcWg92VREo1QNVtiYPO9RWPyAPpLgCy/E6nQFzG0rXKz6mofG5jiMOoIxDHgjxFILgVP2rgxvYhW9rQKqMw3EsGe5W5hkpew+I14h5RJUcOpTilfWJUVaGhfiOFpoLC4/DFfeY9xb2ISISlKAUhXEK2K1zBIHOnsn7QNBBVg1AkQTh3XEBNv8AhlRGg2sAIsNqkHnWsQtOIfWppSvCoKcbUpq1u4A1CNXISY+rerKIHFZI6lKsdim3F6pLaAmbXgKiQhG1uX2qgkYV7FuBTpsIhIBCUg8ByFvWD51cMu7KPOuFSXcR3ZkFbpKCobWRe3mb/CrnlnZ9phMITe1zfpPKapv0VXsov7LI+wP6U/lSrS+7POlQ7hbAijxpBcVylTBQ7rmm1CKVKrIcQqvU0qVUQSkSKbLJm0R76VKrIVrOOx6XCVtGFfZ4enL9bVXMPlC23SVykjhx5eopUqJSYtpckonBrO0+piiGsvKTvSpUQI620eJuNqcUDz/GlSqEPD7K1gDYcTTYwugbUqVQo6W5rwnCfqK5SqyHpeEnf411GWpmwjyFKlUIOt4AfZ9d/hRQwU7b0qVQuh3CYBfEwJ3/AF6UZicSzh063VpSOajc+Q3J6ClSrPObHwgkVPNe3RIPzcBtH/GcE+qEfifhVWLTrrgWtbhWrZRGp1Q/5aP8MXNztypUqKfw4Lj8uS1ZL2aIEkFtJPigytcX8bhvudhYcKtGBwDTYGhIG/CuUqANhiUTZIo1vAJUiFoB5ggGlSq6BsiMX2HwThlbCSb/ABo/LMiw2H/umW0bXCRPvrlKpSLskwrqK7qpUqhBd91pUqVWUf/Z" class="card-img-top" alt="Mille-feuille">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge badge-difficulty badge-hard">Difícil</span>
+                                <span class="badge bg-dark">3 hrs</span>
+                            </div>
+                            <h5 class="recipe-title">Mille-feuille</h5>
+                            <p class="recipe-description">El clásico postre de mil hojas con capas crujientes de hojaldre y crema pastelera vainilla.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="ms-2 text-muted">(189)</span>
+                                </div>
+                                <a href="mille.html" class="btn recipe-btn">Ver Receta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Postre 4 - Tarte Tatin -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card recipe-card">
+                        <img src="data:image/jpeg;base64,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"="card-img-top" alt="Tarte Tatin">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge badge-difficulty badge-medium">Media</span>
+                                <span class="badge bg-dark">1 hr</span>
+                            </div>
+                            <h5 class="recipe-title">Tarte Tatin</h5>
+                            <p class="recipe-description">La famosa tarta invertida de manzanas caramelizadas con un hojaldre perfectamente dorado.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="ms-2 text-muted">(231)</span>
+                                </div>
+                                <a href="tarta tin.html" class="btn recipe-btn">Ver Receta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Postre 5 - Opéra -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card recipe-card">
+                        <img src="https://thegreatbritishbakeoff.co.uk/wp-content/uploads/2024/11/paul_opera_cake_1024-450-1024x450.jpg " class="card-img-top" alt="Pastel Opéra">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge badge-difficulty badge-hard">Difícil</span>
+                                <span class="badge bg-dark">4 hrs</span>
+                            </div>
+                            <h5 class="recipe-title">Gâteau Opéra</h5>
+                            <p class="recipe-description">El elegante pastel de capas con bizcocho joconde, café, ganache y glaseado de chocolate.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="ms-2 text-muted">(156)</span>
+                                </div>
+                                <a href="opera.html" class="btn recipe-btn">Ver Receta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Postre 6 - Crème Brûlée -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card recipe-card">
+                        <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Crème Brûlée">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge badge-difficulty badge-medium">Media</span>
+                                <span class="badge bg-dark">1 hr</span>
+                            </div>
+                            <h5 class="recipe-title">Crème Brûlée</h5>
+                            <p class="recipe-description">La clásica crema francesa con vainilla y su característica capa de caramelo crujiente.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="ms-2 text-muted">(412)</span>
+                                </div>
+                                <a href="creme-brulee.html" class="btn recipe-btn">Ver Receta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#featured-recipes" class="btn hero-btn hero-btn-primary" style="font-size: 1rem;">
+                    <i class="fas fa-ice-cream me-2"></i>Ver Más Postres Franceses
+                </a>
+            </div>
+        </div>
+    </section>    <!-- Sopas del Mundo -->
+    <section class="container mb-5 py-5" id="soups">
+        <div class="animate-on-scroll">
+            <h2 class="text-center mb-5" style="font-size: 2.5rem; color: var(--text-dark);">Sopas del Mundo</h2>
+            <div class="row">
+                <!-- Sopa 1 - Minestrone -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card recipe-card">
+                        <img src="https://www.unileverfoodsolutions.es/dam/global-ufs/mcos/SPAIN/calcmenu/recipes/ES-recipes/general/minestrone/main-header.jpg" class="card-img-top" alt="Minestrone italiano">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge badge-difficulty badge-medium">Media</span>
+                                <span class="badge bg-dark">45 min</span>
+                            </div>
+                            <h5 class="recipe-title">Minestrone Italiano</h5>
+                            <p class="recipe-description">La clásica sopa italiana llena de vegetales frescos, pasta y frijoles, con un toque de pesto genovés.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="ms-2 text-muted">(312)</span>
+                                </div>
+                                <a href="minestrone.html" class="btn recipe-btn">Ver Receta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sopa 2 - Tom Yum -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card recipe-card">
+                        <img src="https://warningsugarygoodness.com/wp-content/uploads/2024/06/tom-yum-goong-spicy-thai-soup-500x375.jpg" class="card-img-top" alt="Tom Yum tailandesa">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge badge-difficulty badge-medium">Media</span>
+                                <span class="badge bg-dark">35 min</span>
+                            </div>
+                            <h5 class="recipe-title">Tom Yum Goong</h5>
+                            <p class="recipe-description">La icónica sopa tailandesa picante y agria con camarones, hierba limón, galanga y hojas de lima kaffir.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="ms-2 text-muted">(278)</span>
+                                </div>
+                                <a href="tomyum.html" class="btn recipe-btn">Ver Receta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sopa 3 - Gazpacho -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card recipe-card">
+                        <img src="https://content-cocina.lecturas.com/medio/2021/03/11/paso-a-paso-para-hacer-gazpacho-andaluz-con-trocitos-de-verduras-resultado-final_afebd712_1200x630.jpg" class="card-img-top" alt="Gazpacho andaluz">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge badge-difficulty badge-easy">Fácil</span>
+                                <span class="badge bg-dark">20 min</span>
+                            </div>
+                            <h5 class="recipe-title">Gazpacho Andaluz</h5>
+                            <p class="recipe-description">La refrescante sopa fría española con tomates maduros, pepino, pimiento y un toque de vinagre de Jerez.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="ms-2 text-muted">(421)</span>
+                                </div>
+                                <a href="gazpacho.html" class="btn recipe-btn">Ver Receta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sopa 4 - Pho -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card recipe-card">
+                        <img src=https://tarasmulticulturaltable.com/wp-content/uploads/2013/06/Pho-Bo-Vietnamese-Beef-Noodle-Soup-2-of-3.jpg"" class="card-img-top" alt="Pho vietnamita">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge badge-difficulty badge-hard">Difícil</span>
+                                <span class="badge bg-dark">4 hrs</span>
+                            </div>
+                            <h5 class="recipe-title">Pho Bo Vietnamita</h5>
+                            <p class="recipe-description">La famosa sopa de fideos con caldo de res aromático, especias tostadas y finas lonchas de carne.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="ms-2 text-muted">(387)</span>
+                                </div>
+                                <a href="pho.html" class="btn recipe-btn">Ver Receta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sopa 5 - Borscht -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card recipe-card">
+                        <img src="https://static.ukrinform.com/photos/2018_06/thumb_files/630_360_1529932697-8334.jpg" class="card-img-top" alt="Borscht ruso">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge badge-difficulty badge-medium">Media</span>
+                                <span class="badge bg-dark">1.5 hrs</span>
+                            </div>
+                            <h5 class="recipe-title">Borscht Ucraniano</h5>
+                            <p class="recipe-description">La vibrante sopa de remolacha con carne, repollo, patatas y un toque de crema agria y eneldo fresco.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="ms-2 text-muted">(198)</span>
+                                </div>
+                                <a href="borscht.html" class="btn recipe-btn">Ver Receta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sopa 6 - Caldo de Pollo -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card recipe-card">
+                        <img src="https://i.ytimg.com/vi/oUofK9YrM4c/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBqwDjQZUFOI8K0Vfe6Gqz8BNl5Gg" class="card-img-top" alt="Caldo de pollo">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge badge-difficulty badge-easy">Fácil</span>
+                                <span class="badge bg-dark">1 hr</span>
+                            </div>
+                            <h5 class="recipe-title">Caldo de Pollo Clásico</h5>
+                            <p class="recipe-description">El reconfortante caldo con pollo, zanahorias, apio, cebolla y fideos, perfecto para días fríos.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="ms-2 text-muted">(512)</span>
+                                </div>
+                                <a href="caldo-pollo.html" class="btn recipe-btn">Ver Receta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#featured-recipes" class="btn hero-btn hero-btn-primary" style="font-size: 1rem;">
+                    <i class="fas fa-utensils me-2"></i>Ver Más Recetas de Sopas
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+        <!-- Cocina Coreana Picante -->
+    <section class="container mb-5 py-5" id="korean-spicy">
+        <div class="animate-on-scroll">
+            <h2 class="text-center mb-5" style="font-size: 2.5rem; color: var(--text-dark);">Cocina Coreana Picante</h2>
+            <div class="row">
+                <!-- Receta 1 - Kimchi -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card recipe-card">
+                        <img src="https://d2yoo3qu6vrk5d.cloudfront.net/pulzo-lite/images-resized/PP158R-s-o.webp" class="card-img-top" alt="Kimchi coreano">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge badge-difficulty badge-medium">Media</span>
+                                <span class="badge bg-dark">3 días</span>
+                            </div>
+                            <h5 class="recipe-title">Kimchi Tradicional</h5>
+                            <p class="recipe-description">El fermentado picante de col napa con gochugaru, ajo, jengibre y salsa de pescado, base de la cocina coreana.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="ms-2 text-muted">(587)</span>
+                                </div>
+                                <a href="kimchi.html" class="btn recipe-btn">Ver Receta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Receta 2 - Tteokbokki -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card recipe-card">
+                        <img src="https://www.sokobox.cl/cdn/shop/articles/ad4474bef39c4167b84477eaa7a5052f20210708171733-360032.jpg?v=1750370380" class="card-img-top" alt="Tteokbokki coreano">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge badge-difficulty badge-easy">Fácil</span>
+                                <span class="badge bg-dark">25 min</span>
+                            </div>
+                            <h5 class="recipe-title">Tteokbokki Picante</h5>
+                            <p class="recipe-description">Pasteles de arroz en una salsa roja picante de gochujang, con huevo duro y cebolla verde.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="ms-2 text-muted">(423)</span>
+                                </div>
+                                <a href="tteokbokki.html" class="btn recipe-btn">Ver Receta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Receta 3 - Bibimbap -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card recipe-card">
+                        <img src="https://www.carniceriademadrid.es/wp-content/uploads/2023/03/bibimbap-4887417_1280.jpg" class="card-img-top" alt="Bibimbap coreano">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge badge-difficulty badge-medium">Media</span>
+                                <span class="badge bg-dark">40 min</span>
+                            </div>
+                            <h5 class="recipe-title">Bibimbap Picante</h5>
+                            <p class="recipe-description">Arroz con verduras, carne y huevo, mezclado con gochujang para un sabor explosivo.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="ms-2 text-muted">(512)</span>
+                                </div>
+                                <a href="bibimbap.html" class="btn recipe-btn">Ver Receta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Receta 4 - Kimchi Jjigae -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card recipe-card">
+                        <img src="https://www.eatingwell.com/thmb/PtjVB6QZxEin5M6hHu0GvvPVubg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Kimchi-jjigae-de45aa8daada45a6b4daf266f0b36011.jpg" class="card-img-top" alt="Kimchi Jjigae">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge badge-difficulty badge-medium">Media</span>
+                                <span class="badge bg-dark">35 min</span>
+                            </div>
+                            <h5 class="recipe-title">Kimchi Jjigae</h5>
+                            <p class="recipe-description">Estofado picante de kimchi fermentado con cerdo, tofu y cebolla verde, perfecto para días fríos.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="ms-2 text-muted">(389)</span>
+                                </div>
+                                <a href="kimchi-jjigae.html" class="btn recipe-btn">Ver Receta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Receta 5 - Buldak -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card recipe-card">
+                        <img src="https://thumbs.dreamstime.com/b/korean-yangnam-crispy-fried-chicken-spring-onion-either-spicy-hot-just-sweet-korean-yangnam-crispy-fried-209677163.jpg" class="card-img-top" alt="Buldak coreano">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge badge-difficulty badge-hard">Extremo</span>
+                                <span class="badge bg-dark">50 min</span>
+                            </div>
+                            <h5 class="recipe-title">Buldak de Pollo</h5>
+                            <p class="recipe-description">Pollo "fuego infernal" marinado en una salsa ultra picante de gochujang, miel y chiles.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="ms-2 text-muted">(267)</span>
+                                </div>
+                                <a href="buldak.html" class="btn recipe-btn">Ver Receta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Receta 6 - Jjamppong -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card recipe-card">
+                        <img src="https://thumbs.dreamstime.com/b/cubeta-al-vapor-de-jjamppong-sopa-fideos-marisco-picante-contiene-verduras-camaroneros-cocina-corea-plato-tradicional-atractivo-385607157.jpg" class="card-img-top" alt="Jjamppong coreano">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge badge-difficulty badge-medium">Media</span>
+                                <span class="badge bg-dark">45 min</span>
+                            </div>
+                            <h5 class="recipe-title">Jjamppong Picante</h5>
+                            <p class="recipe-description">Sopa de fideos con mariscos y verduras en un caldo picante de chile rojo y aceite de sésamo.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="ms-2 text-muted">(321)</span>
+                                </div>
+                                <a href="jjamppong.html" class="btn recipe-btn">Ver Receta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Receta 7 - Dakgalbi -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card recipe-card">
+                        <img src="https://www.beyondkimchee.com/wp-content/uploads/2012/06/dakgalbi-chicken-stirfry-thumbnail.jpg" class="card-img-top" alt="Dakgalbi coreano">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge badge-difficulty badge-medium">Media</span>
+                                <span class="badge bg-dark">1 hr</span>
+                            </div>
+                            <h5 class="recipe-title">Dakgalbi</h5>
+                            <p class="recipe-description">Pollo marinado en salsa picante con repollo, batata y tteok (pasteles de arroz), cocinado en sartén.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="ms-2 text-muted">(245)</span>
+                                </div>
+                                <a href="dakgalbi.html" class="btn recipe-btn">Ver Receta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Receta 8 - Gochujang Ssamjang -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card recipe-card">
+                        <img src="https://seulmarket.cl/cdn/shop/files/72_8bead2b5-aa75-47bf-9402-88691b16304d.png?v=1748893975&width=1445" class="card-img-top" alt="Ssamjang coreano">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge badge-difficulty badge-easy">Fácil</span>
+                                <span class="badge bg-dark">15 min</span>
+                            </div>
+                            <h5 class="recipe-title">Ssamjang Picante</h5>
+                            <p class="recipe-description">Pasta de gochujang mezclada con doenjang, ajo, cebolla verde y aceite de sésamo para envolturas.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="ms-2 text-muted">(378)</span>
+                                </div>
+                                <a href="ssamjang.html" class="btn recipe-btn">Ver Receta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#featured-recipes" class="btn hero-btn hero-btn-primary" style="font-size: 1rem;">
+                    <i class="fas fa-pepper-hot me-2"></i>Ver Más Recetas Coreanas
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Recetas Recientes -->
+    <section class="container mb-5 py-5" id="recent-recipes">
+        <div class="animate-on-scroll">
+            <h2 class="text-center mb-5" style="font-size: 2.5rem; color: var(--text-dark);">Recetas Recientes</h2>
+            <div class="row">
+                <!-- Receta 1 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card recipe-card h-100">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Bowl vegetariano">
+                        <div class="card-body">
+                            <span class="badge badge-difficulty badge-easy mb-2">Fácil</span>
+                            <h5 class="recipe-title">Bowl Buddha Nutritivo</h5>
+                            <p class="recipe-description">Combinación perfecta de quinoa, aguacate, vegetales frescos y tahini.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="nutrientes.html" class="btn recipe-btn">Ver Receta</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Receta 2 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card recipe-card h-100">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1398&q=80" class="card-img-top" alt="Hamburguesa gourmet">
+                        <div class="card-body">
+                            <span class="badge badge-difficulty badge-medium mb-2">Media</span>
+                            <h5 class="recipe-title">Burger Wagyu Premium</h5>
+                            <p class="recipe-description">Carne wagyu, queso manchego curado y cebolla caramelizada al vino tinto.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="#recipe-detail" class="btn recipe-btn">Ver Receta</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Receta 3 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card recipe-card h-100">
+                        <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" class="card-img-top" alt="Sopa de calabaza">
+                        <div class="card-body">
+                            <span class="badge badge-difficulty badge-easy mb-2">Fácil</span>
+                            <h5 class="recipe-title">Crema de Calabaza Especiada</h5>
+                            <p class="recipe-description">Aterciopelada crema con jengibre, cúrcuma y leche de coco.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="#recipe-detail" class="btn recipe-btn">Ver Receta</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Receta 4 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card recipe-card h-100">
+                        <img src="https://imag.bonviveur.com/tarta-tatin-de-manzana-de-las-hermanas-tatin.jpg" class="card-img-top" alt="Pizza napoletana">
+                        <div class="card-body">
+                            <span class="badge badge-difficulty badge-medium mb-2">Media</span>
+                            <h5 class="recipe-title">tarta tatin</h5> 
+                            <p class="recipe-description">manzanas, matequilla, azúcar</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="#recipe-detail" class="btn recipe-btn">Ver Receta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#featured-recipes" class="btn hero-btn hero-btn-primary" style="font-size: 1rem;">
+                    <i class="fas fa-utensils me-2"></i>Ver Todas las Recetas
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Sección de Chef Destacado -->
+    <section class="py-5" style="background: linear-gradient(135deg, #f8f9fa, #ffffff);" id="chef">
+        <div class="container animate-on-scroll">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://previews.123rf.com/images/22ndmonkey/22ndmonkey2308/22ndmonkey230800157/211027446-illustration-of-a-little-boy-and-a-girl-chef-on-a-white-background.jpg" 
+                         class="img-fluid rounded-4 shadow-lg" alt="Chef profesional" style="border-radius: var(--border-radius) !important;">
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h2 class="mb-4" style="font-size: 2.5rem; color: var(--text-dark);">chefs anonimos </h2>
+                    <p class="lead mb-4" style="color: var(--text-light); font-size: 1.2rem;">
+                        "La cocina es un arte que combina tradición, creatividad y pasión. Cada receta cuenta una historia."
+                    </p>
+                    <p style="color: var(--text-light); line-height: 1.8;">
+                         Estos cocineros profecionales poseen amplios conocimientos y hablidades en la preparación de estas recetas, que nos dejan a todos asombrados.
+                    </p>
+                    <div class="mt-4">
+                        <span class="badge bg-primary me-2 p-2">Especialista en Cocina Mediterránea</span>
+                        <span class="badge bg-secondary me-2 p-2">Estrella Michelin</span>
+                        <span class="badge bg-success p-2">15+ Años Experiencia</span>
+                    </div>
+                    <div class="mt-4">
+                        <a href="#chef-profile" class="btn hero-btn hero-btn-primary me-3">
+                            <i class="fas fa-user me-2"></i>Ver Perfil
+                        </a>
+                        <a href="#classes" class="btn hero-btn hero-btn-outline" style="color: var(--primary-color); border-color: var(--primary-color);">
+                            <i class="fas fa-video me-2"></i>Clases Online
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Sección de Suscripción -->
+    <section class="newsletter-section py-5" id="newsletter">
+        <div class="container newsletter-content">
+            <div class="row justify-content-center text-center animate-on-scroll">
+                <div class="col-lg-8">
+                    <h2 class="mb-4" style="font-size: 2.5rem; font-weight: 700;">
+                        <i class="fas fa-envelope-open me-3"></i>Únete a Nuestra Comunidad Gastronómica
+                    </h2>
+                    <p class="lead mb-5" style="font-size: 1.2rem; opacity: 0.9;">
+                        Recibe recetas exclusivas, técnicas de chef, tendencias culinarias y ofertas especiales directamente en tu bandeja de entrada cada semana.
+                    </p>
+                    <div class="newsletter-form">
+                        <div class="row g-3">
+                            <div class="col-md-8">
+                                <input type="email" class="newsletter-input" placeholder="Ingresa tu email para recetas exclusivas">
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit" class="newsletter-btn">
+                                    <i class="fas fa-paper-plane me-2"></i>Suscribirse
+                                </button>
+                            </div>
+                        </div>
+                        <p class="mt-3" style="font-size: 0.9rem; opacity: 0.7;">
+                            <i class="fas fa-shield-alt me-2"></i>Respetamos tu privacidad. Sin spam, solo contenido de calidad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- Estadísticas -->
+    <section class="py-5" style="background: white;" id="stats">
+        <div class="container animate-on-scroll">
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="p-4">
+                        <div class="display-4 mb-3" style="color: var(--primary-color);">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="h2 mb-2" style="color: var(--text-dark); font-weight: 700;">1,200+</h3>
+                        <p style="color: var(--text-light); font-size: 1.1rem;">Recetas Profesionales</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="p-4">
+                        <div class="display-4 mb-3" style="color: var(--accent-color);">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="h2 mb-2" style="color: var(--text-dark); font-weight: 700;">50,000+</h3>
+                        <p style="color: var(--text-light); font-size: 1.1rem;">Miembros Activos</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="p-4">
+                        <div class="display-4 mb-3" style="color: var(--secondary-color);">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="h2 mb-2" style="color: var(--text-dark); font-weight: 700;">4.9/5</h3>
+                        <p style="color: var(--text-light); font-size: 1.1rem;">Calificación Promedio</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="p-4">
+                        <div class="display-4 mb-3" style="color: var(--primary-color);">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3 class="h2 mb-2" style="color: var(--text-dark); font-weight: 700;">15+</h3>
+                        <p style="color: var(--text-light); font-size: 1.1rem;">Chefs Expertos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="footer-brand mb-4">
+                        <i class="fas fa-utensils me-2"></i>Sabores & Delicias
+                    </div>
+                    <p style="color: rgba(255,255,255,0.8); line-height: 1.7; margin-bottom: 2rem;">
+                        Tu destino culinario de confianza. Creamos experiencias gastronómicas excepcionales 
+                        a través de recetas auténticas, técnicas profesionales y la pasión por la cocina.
+                    </p>
+                    <div>
+                        <a href="#" class="social-icon me-2">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon me-2">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon me-2">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                        <a href="#" class="social-icon me-2">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="mb-4" style="color: var(--primary-color); font-weight: 600;">Navegación</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#home" class="footer-link">Inicio</a></li>
+                        <li class="mb-3"><a href="#featured-recipes" class="footer-link">Recetas</a></li>
+                        <li class="mb-3"><a href="#categories" class="footer-link">Categorías</a></li>
+                        <li class="mb-3"><a href="#chef" class="footer-link">Blog Culinario</a></li>
+                        <li class="mb-3"><a href="#contact" class="footer-link">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="mb-4" style="color: var(--primary-color); font-weight: 600;">Especialidades</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#featured-recipes" class="footer-link">Cocina Mediterránea</a></li>
+                        <li class="mb-3"><a href="#featured-recipes" class="footer-link">Repostería Francesa</a></li>
+                        <li class="mb-3"><a href="#featured-recipes" class="footer-link">Cocina Vegana</a></li>
+                        <li class="mb-3"><a href="#featured-recipes" class="footer-link">Técnicas Profesionales</a></li>
+                        <li class="mb-3"><a href="#featured-recipes" class="footer-link">Cocina Internacional</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-4" style="color: var(--primary-color); font-weight: 600;">Contacto Directo</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3" style="color: rgba(255,255,255,0.8);">
+                            <i class="fas fa-map-marker-alt me-3" style="color: var(--primary-color);"></i>
+                            Calle Gastronómica 123<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Madrid, España
+                        </li>
+                        <li class="mb-3" style="color: rgba(255,255,255,0.8);">
+                            <i class="fas fa-phone me-3" style="color: var(--primary-color);"></i>
+                            +34 91 234 5678
+                        </li>
+                        <li class="mb-3" style="color: rgba(255,255,255,0.8);">
+                            <i class="fas fa-envelope me-3" style="color: var(--primary-color);"></i>
+                            hola@saboresydelicias.com
+                        </li>
+                        <li style="color: rgba(255,255,255,0.8);">
+                            <i class="fas fa-clock me-3" style="color: var(--primary-color);"></i>
+                            Lun - Vie: 9:00 - 18:00
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-5 mb-4" style="border-color: rgba(255,255,255,0.2);">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0" style="color: rgba(255,255,255,0.7);">
+                        © 2024 Sabores & Delicias. Todos los derechos reservados.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <a href="#terms" class="footer-link me-4">Términos y Condiciones</a>
+                    <a href="#privacy" class="footer-link me-4">Política de Privacidad</a>
+                    <a href="#cookies" class="footer-link">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Loading Screen
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                document.getElementById('loadingOverlay').style.opacity = '0';
+                setTimeout(() => {
+                    document.getElementById('loadingOverlay').style.display = 'none';
+                }, 500);
+            }, 1000);
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('mainNavbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update URL without reload
+                    if (history.pushState) {
+                        history.pushState(null, null, targetId);
+                    } else {
+                        window.location.hash = targetId;
+                    }
+                }
+            });
+        });
+
+        // Highlight active nav link based on scroll position
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        
+        window.addEventListener('scroll', function() {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Category buttons functionality
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector('.active-category').classList.remove('active-category');
+                this.classList.add('active-category');
+                
+                // Scroll to recipes section
+                const target = document.querySelector('#featured-recipes');
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Add hover effects to recipe cards
+        document.querySelectorAll('.recipe-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Newsletter form validation
+        document.querySelector('.newsletter-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            const email = document.querySelector('.newsletter-input').value;
+            if (email && email.includes('@')) {
+                // Simulate successful subscription
+                this.innerHTML = '<i class="fas fa-check me-2"></i>¡Suscrito!';
+                this.style.background = 'linear-gradient(45deg, #2ecc71, #27ae60)';
+                setTimeout(() => {
+                    this.innerHTML = '<i class="fas fa-paper-plane me-2"></i>Suscribirse';
+                    this.style.background = 'linear-gradient(45deg, var(--primary-color), var(--accent-color))';
+                }, 3000);
+            } else {
+                alert('Por favor, ingresa un email válido');
+            }
+        });
+
+        // Add parallax effect to hero section
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('.hero-section');
+            const speed = scrolled * 0.5;
+            parallax.style.backgroundPosition = `center ${speed}px`;
+        });
+    </script>
+</body>
+</html>
